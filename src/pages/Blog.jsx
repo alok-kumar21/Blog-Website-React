@@ -1,6 +1,7 @@
 import 'react-bootstrap';
 import Header from '../components/Header';
-import Footer from "../components/Footer"
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 function Blog() {
   return (
     <>
@@ -17,6 +18,9 @@ function Blog() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Facere provident culpa sint sequi.
                   </p>
+                  <Link className="btn btn-primary" to="/blogs/1">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -28,6 +32,9 @@ function Blog() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Facere provident culpa sint sequi.
                   </p>
+                  <Link className="btn btn-primary" to="/blogs/2">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -39,13 +46,16 @@ function Blog() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Facere provident culpa sint sequi.
                   </p>
+                  <Link className="btn btn-primary" to="/blogs/3">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
